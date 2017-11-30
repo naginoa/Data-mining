@@ -7,3 +7,4 @@
 ![Image text](https://github.com/naginoasukara/Data-mining/blob/master/image/3.png)
 
 需要gpu加速 速率会快很多
+
