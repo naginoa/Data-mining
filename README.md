@@ -25,3 +25,10 @@
 ## 4.排名及结果
 
 ![Image text](https://github.com/naginoasukara/Data-mining/blob/master/kaggle%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/image/kaggle%E6%8E%92%E5%90%8D%E5%8F%8A%E5%BE%97%E5%88%86.png)
+
+# tf衣服图片识别率提升
+tf官方教程的识别网络结构是一开始全部对图片碾平成一维, 之后过两个全连接层.
+
+我的改进是首先将数据reshape成四维, [batch, h,w,c]. CNN1+dropout+CNN2  256全连接 dropout 0.2 128全连接 68全连接 dropout0.2 10全连接
+
+准确率可以提升从0.86提升到0.91
